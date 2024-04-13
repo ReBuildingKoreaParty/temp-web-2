@@ -6,6 +6,25 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="flex h-full select-auto flex-col font-sans text-gray-900 antialiased dark:bg-gray-800 dark:text-gray-100">
+
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="/" class="-m-1.5 p-1.5">
+          <span class="sr-only">조국혁신당</span>
+          <img class="h-8 w-auto" src="images/logo.png" alt="">
+        </a>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="/application-and-resignation-for-membership.html" class="text-sm font-semibold leading-6 text-white hover:text-[#0073cf]">입당/탈당</a>
+        <a href="/payment-of-membership-due.html" class="text-sm font-semibold leading-6 text-white hover:text-[#0073cf]">당비납부</a>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <!-- <a href="#" class="text-sm font-semibold leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a> -->
+      </div>
+    </nav>
+  </header>
+
   <div class="w-full h-full relative isolate overflow-hidden pt-14">
     <img src="https://images.unsplash.com/photo-1468082547792-d37c6c74003e?q=80&w=2676&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">

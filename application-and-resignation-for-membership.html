@@ -5,7 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="select-auto flex-col font-sans text-gray-900 antialiased dark:bg-gray-800 dark:text-gray-100">
+<body class="select-auto h-full flex flex-col font-sans text-gray-900 antialiased">
+
+  <!-- header -->
+  <header class="fixed inset-x-0 top-0 z-50 backdrop-blur-md bg-white/30">
+    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="/" class="-m-1.5 p-1.5">
+          <span class="sr-only">조국혁신당</span>
+          <img class="h-8 w-auto" src="images/logo.png" alt="">
+        </a>
+      </div>
+
+      <div class="flex gap-x-4 lg:gap-x-12">
+        <a href="/application-and-resignation-for-membership.html" class="text-sm font-semibold leading-6 text-[#0073cf] hover:text-[#0047ab]">입당/탈당</a>
+        <a href="/payment-of-membership-due.html" class="text-sm font-semibold leading-6 text-[#0073cf] hover:text-[#0047ab]">당비납부</a>
+      </div>
+
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <!-- <a href="#" class="text-sm font-semibold leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a> -->
+      </div>
+    </nav>
+  </header>
 
   <div class="relative isolate overflow-hidden bg-white py-24 sm:py-32">
     <div class="absolute -top-80 left-[max(6rem,33%)] -z-10 transform-gpu blur-3xl sm:left-1/2 md:top-20 lg:ml-20 xl:top-3 xl:ml-56" aria-hidden="true">
@@ -76,7 +97,7 @@
             </li>
           </ul>
           <p class="mt-14">
-            <a href="#" class="rounded-md bg-[#0047ab] flex sm:inline-flex justify-center px-14 py-4 text-sm font-semibold text-white shadow-sm hover: bg-[#0073cf] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">온라인 입당 신청</a>
+            <a href="#" class="rounded-md bg-[#0073cf] flex sm:inline-flex justify-center px-14 py-4 text-sm font-semibold text-white shadow-sm hover:bg-[#0047ab] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">온라인 입당 신청</a>
           </p>
         </div>
       </div>
