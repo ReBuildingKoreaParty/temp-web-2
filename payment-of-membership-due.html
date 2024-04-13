@@ -1,11 +1,96 @@
 <!doctype html>
-<html class="h-full">
+<html class="js-focus-visible h-full">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex h-full select-auto flex-col font-sans text-gray-900 antialiased dark:bg-gray-800 dark:text-gray-100">
-  당비납부
+<body class="select-auto h-full flex flex-col font-sans text-gray-900 antialiased dark:bg-gray-800 dark:text-gray-100">
+
+  <div class="relative h-full isolate overflow-x-hidden bg-white py-24 sm:py-32">
+    <div class="absolute -top-80 left-[max(6rem,33%)] -z-10 transform-gpu blur-3xl sm:left-1/2 md:top-20 lg:ml-20 xl:top-3 xl:ml-56" aria-hidden="true">
+      <div class="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#0073cf] to-[#0047ab] opacity-40" style="clip-path: polygon(63.1% 29.6%, 100% 17.2%, 76.7% 3.1%, 48.4% 0.1%, 44.6% 4.8%, 54.5% 25.4%, 59.8% 49.1%, 55.3% 57.9%, 44.5% 57.3%, 27.8% 48%, 35.1% 81.6%, 0% 97.8%, 39.3% 100%, 35.3% 81.5%, 97.2% 52.8%, 63.1% 29.6%)"></div>
+    </div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <p class="ml-1 font-semibold leading-8 tracking-tight text-indigo-600">Payment of membership dues</p>
+      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">당비 납부 신청</h1>
+
+      <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:mt-10 lg:max-w-none lg:grid-cols-12">
+        <div class="max-w-xl text-base leading-7 text-gray-700 lg:col-span-7">
+          <ul role="list" class="mt-8 max-w-xl space-y-2 text-gray-600">
+            <li class="flex items-center gap-x-2">
+              <svg
+                viewBox="0 0 2 2"
+                width="4"
+                height="4"
+                aria-hidden="true"
+                class="fill-gray-500"
+              >
+                <circle cx="1" cy="1" r="1" />
+              </svg>
+              <span><strong class="font-semibold text-gray-900">현재 조국혁신당의 당비 납부 신청은 CMS 가입을 통해 가능합니다.</strong>
+              </span>
+            </li>
+            <li class="flex items-center gap-x-2">
+              <svg
+                viewBox="0 0 2 2"
+                width="4"
+                height="4"
+                aria-hidden="true"
+                class="fill-gray-500"
+              >
+                <circle cx="1" cy="1" r="1" />
+              </svg>
+              <span><strong class="font-semibold text-gray-900">아래 “당비 납부 신청” 버튼을 클릭하시면 CMS 가입 페이지로 이동합니다.</strong></span>
+            </li>
+          </ul>
+          <p class="mt-14">
+            <a href="#" class="rounded-md bg-[#0047ab] flex sm:inline-flex justify-center px-14 py-4 text-sm font-semibold text-white shadow-sm hover: bg-[#0073cf] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">당비 납부 신청</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-20 mx-auto max-w-2xl lg:mx-0">
+        <h2 class="mt-20 text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">당비 납부 방법</h2>
+          
+        <ul role="list" class="mt-8 max-w-xl space-y-4 text-gray-600">
+          <li>
+            <ol class="list-decimal ml-4 mt-2 leading-6 text-sm">
+              <li>
+                <span class="text-sm">당비 납부 방법 : 은행 자동 이체 / 카드 결제</span>
+              </li>
+              <li>
+                <span class="text-sm">당비 금액 : 5000원, 10,000원, 20,000원 중 선택 (직접 입력은 20,000원 이상)</span>
+              </li>
+              <li>
+                <span class="text-sm">당비납부일 : 매월 10일, 15일, 25일 중 선택</span>
+              </li>
+            </ol>
+          </li>
+        </ul>
+
+        <p class="mt-14 flex flex-col sm:flex-row gap-y-1 gap-x-1">
+          <a href="#" class="flex-1 rounded-md bg-[#0047ab] flex items-center justify-center px-8 py-4 text-sm font-semibold text-white shadow-sm hover: bg-[#0073cf] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 gap-x-1">조국혁신당 입당 원서<small>(hwp)</small></a>
+          <a href="#" class="flex-1 rounded-md bg-[#0047ab] flex items-center justify-center px-8 py-4 text-sm font-semibold text-white shadow-sm hover: bg-[#0073cf] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 gap-x-1">조국혁신당 입당 원서<small>(docx)</small></a>
+          <a href="#" class="flex-1 rounded-md bg-[#0047ab] flex items-center justify-center px-8 py-4 text-sm font-semibold text-white shadow-sm hover: bg-[#0073cf] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 gap-x-1">조국혁신당 입당 원서<small>(pdf)</small></a>
+        </p>
+
+        <div class="mt-14 rounded-md flex bg-blue-50 p-4">
+          <div class="shrink-0">
+            <svg class="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="ml-3 flex flex-col flex-1 gap-y-2 md:justify-between">
+            <h3 class="text-sm text-blue-700 font-semibold">당비 납부 신청 확인</h3>
+            <p class="text-sm text-blue-700">CMS 가입 1~2일(주말 제외) 후 카카오톡으로 가입 완료 안내 메시지가 발송됩니다.   
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
