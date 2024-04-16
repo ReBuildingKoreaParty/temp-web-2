@@ -71,16 +71,17 @@
       href="/images/favicon/apple-touch-icons/icon-180x180.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
       rel="stylesheet"
-      as="style"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
     />
+    <link rel="stylesheet" href="main.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body
-    class="flex h-full select-auto flex-col font-sans text-gray-900 antialiased dark:bg-gray-800 dark:text-gray-100"
+    class="flex h-full select-auto flex-col text-gray-900 antialiased dark:bg-gray-800 dark:text-gray-100"
   >
     <!-- <header class="absolute inset-x-0 top-0 z-50">
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -98,42 +99,29 @@
     </nav>
   </header> -->
 
-    <div class="w-full h-full relative isolate overflow-hidden pt-14">
+    <div class="w-full h-full relative isolate overflow-hidden pt-4 sm:pt-14">
       <img
         src="images/bg.jpg"
         alt=""
         class="absolute inset-0 -z-10 h-[calc(100%-60px)] w-full object-cover"
       />
+      <img
+        src="images/logo.png"
+        alt="logo"
+        class="pl-4 sm:pl-14 sm:h-20 h-12"
+      />
       <div
-        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        aria-hidden="true"
+        class="w-full text-center absolute top-24 sm:top-32 lg:top-6 flex justify-center"
       >
-        <div
-          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-          style="
-            clip-path: polygon(
-              74.1% 44.1%,
-              100% 61.6%,
-              97.5% 26.9%,
-              85.5% 0.1%,
-              80.7% 2%,
-              72.5% 32.5%,
-              60.2% 62.4%,
-              52.4% 68.1%,
-              47.5% 58.3%,
-              45.2% 34.5%,
-              27.5% 76.7%,
-              0.1% 64.9%,
-              17.9% 100%,
-              27.6% 76.8%,
-              76.1% 97.7%,
-              74.1% 44.1%
-            );
-          "
-        ></div>
+        <img
+          src="images/title.png"
+          alt="title"
+          class="lg:w-[90%] object-cover max-w-max w-[150%]"
+        />
       </div>
-
-      <div class="fixed bottom-12 inset-x-0 mx-auto max-w-2xl py-4 sm:py-24">
+      <div
+        class="fixed bottom-24 sm:bottom-12 inset-x-0 mx-auto max-w-5xl py-4 sm:py-24"
+      >
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
           <div
             class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-100 ring-1 ring-white/50 hover:ring-white/50 hidden"
@@ -141,7 +129,7 @@
             새로운 사이트를 준비중에 있습니다.
           </div>
         </div>
-        <div class="text-center">
+        <div class="text-center w-full">
           <h1
             class="text-4xl font-bold tracking-tight text-white sm:text-6xl hidden"
           >
@@ -153,7 +141,13 @@
             가장 처음부터 가장 마지막까지
           </p>
           <div
-            class="mt-10 flex flex-col sm:flex-row gap-y-2 items-center justify-center gap-x-6 px-6 sm:px-0"
+            class="bg-black bg-opacity-50 py-3 w-full text-white text-lg sm:text-2xl font-meidum"
+          >
+            조국혁신당 홈페이지는 빠른 시일 내에<br />새로운 모습으로 다시
+            찾아뵙겠습니다
+          </div>
+          <div
+            class="mt-4 sm:mt-10 flex flex-col sm:flex-row gap-y-2 items-center justify-center gap-x-6 px-6 sm:px-0"
           >
             <a
               href="/application-and-resignation-for-membership.html"
@@ -169,51 +163,23 @@
         </div>
       </div>
 
-      <div
-        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-        aria-hidden="true"
-      >
-        <div
-          class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-          style="
-            clip-path: polygon(
-              74.1% 44.1%,
-              100% 61.6%,
-              97.5% 26.9%,
-              85.5% 0.1%,
-              80.7% 2%,
-              72.5% 32.5%,
-              60.2% 62.4%,
-              52.4% 68.1%,
-              47.5% 58.3%,
-              45.2% 34.5%,
-              27.5% 76.7%,
-              0.1% 64.9%,
-              17.9% 100%,
-              27.6% 76.8%,
-              76.1% 97.7%,
-              74.1% 44.1%
-            );
-          "
-        ></div>
-      </div>
-
       <footer class="fixed bottom-0 bg-white p-3 sm:p-5 w-full">
         <div class="mx-auto flex items-start gap-x-4 sm:gap-x-10">
           <a href="/"
             ><img
-              src="/images/logo.png"
+              src="images/logo.png"
               alt="footer-logo"
-              class="w-auto h-5 sm:h-9"
+              class="w-auto h-7 sm:h-9"
           /></a>
           <div class="flex-1 sm:space-y-1 sm:text-xs text-[10px]">
             <div>
-              서울특별시 영등포구 국회대로 70길 15-1, (여의도동, 극동VIP빌딩)
-              제4층 제403호
+              서울특별시 영등포구 국회대로 70길 15-1,<br class="sm:hidden" />
+              (여의도동, 극동VIP빌딩) 제4층 제403호
             </div>
             <div>
-              고유번호 : 217-82-87052 | 전화번호 : 02-335-0410 | 팩스번호 :
-              02-335-0412
+              고유번호 : 217-82-87052 | 전화번호 : 02-335-0410 |<br
+                class="sm:hidden"
+              />팩스번호 : 02-335-0412
             </div>
             <div>Copyright © 2024 조국혁신당. All Rights Reserved.</div>
           </div>
