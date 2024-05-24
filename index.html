@@ -78,11 +78,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
+
+    <script src="/js/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body
     class="flex h-full select-auto flex-col text-gray-900 antialiased dark:bg-gray-800 dark:text-gray-100"
   >
+    
+    <div id="popupLayer" class="popup">
+      <div class="popup-content">
+          <span id="closePopupBtn" class="close">&times;</span>
+          <p><img src="/images/popup.png" alt=""/></p>
+      </div>
+    </div>
+
     <!-- <header class="absolute inset-x-0 top-0 z-50">
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
